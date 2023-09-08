@@ -254,8 +254,11 @@
 
 
     window.onload = () =>{
-      html.setAttribute('data-theme', 'light');
-      document.querySelector('input[type="checkbox"]').checked = false;
+      html.setAttribute('data-theme', 'dark');
+      document.querySelector('input[type="checkbox"]').checked = true;
+      document.querySelector('i').classList.remove('fa-toggle-on');
+      document.querySelector('i').classList.add('fa-toggle-off');
+      document.querySelector('i').classList.add('on')
     }
   </script>
 </body>
